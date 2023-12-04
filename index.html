@@ -14,9 +14,9 @@
 
       <ul id="top-menu-bar">
         <li><a href="#">HOME</a></li>
-        <li><a href="#">Skills</a></li>
+        <li><a href="#" onclick="showSkills()">Skills</a></li>
         <li><a href="#" class="active">Projects</a></li>
-        <li><a href="#">Languages</a></li>
+        <li><a href="#" onclick="showLanguages()">Languages</a></li>
       </ul>
     </header>
 
@@ -63,7 +63,7 @@
           <p>Welcome...</p>
         </div>
 
-        <div style="display: none">
+        <div id="Skills" style="display: none">
           <h2>Skills</h2>
           <ul>
             <li class="favorite">HTML</li>
@@ -72,26 +72,28 @@
           </ul>
         </div>
 
-        <div>
+        <div id="Projects">
           <h2>Projects</h2>
           <p>...</p>
         </div>
 
-        <h2>Known Languages</h2>
-        <table border="1">
-          <tr>
-            <th>Language</th>
-            <th>Level</th>
-          </tr>
-          <tr>
-            <td>Romanian</td>
-            <td>Native</td>
-          </tr>
-          <tr>
-            <td>English</td>
-            <td>Profesional</td>
-          </tr>
-        </table>
+        <div id="languages" style="display: none">
+          <h2>Known Languages</h2>
+          <table border="1">
+            <tr>
+              <th>Language</th>
+              <th>Level</th>
+            </tr>
+            <tr>
+              <td>Romanian</td>
+              <td>Native</td>
+            </tr>
+            <tr>
+              <td>English</td>
+              <td>Profesional</td>
+            </tr>
+          </table>
+        </div>
       </div>
     </section>
 
