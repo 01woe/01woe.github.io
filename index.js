@@ -1,4 +1,5 @@
-function hide() {
+function hide(id) {
+  console.info("hide", id);
   document.getElementById("skills").style.display = "none";
 }
 
@@ -21,9 +22,9 @@ function showSkills() {
 }
 
 function showProjects() {
-  document.getElementById("home").style.display = "none";
-  document.getElementById("skills").style.display = "none";
-  document.getElementById("languages").style.display = "none";
+  hide("home");
+  hide("skills");
+  hide("languages");
 
   var page = document.getElementById("projects");
   page.style.display = "block";
