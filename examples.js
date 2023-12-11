@@ -1,6 +1,6 @@
 function variablesExamples() {
   console.info(2 + 3);
-  console.warn("Cuibus Alexandru");
+  console.warn("Nicolae Matei");
 
   var employed = true;
   var age = 18;
@@ -10,9 +10,8 @@ function variablesExamples() {
   employed = "da";
   console.log("Angajat:", employed);
 
-  var Skills = ["html", "css"];
-  Skills;
-  console.debug("tipul variabilei skills", typeof skills);
+  var skills = ["html", "css"];
+  console.debug("tipul variabilei skills:", typeof skills);
 }
 
 function updateTitle(title) {
@@ -23,4 +22,4 @@ function updateTitle(title) {
 }
 
 variablesExamples();
-updateTitle("Web Developer");
+updateTitle("Web Developer @ RWS");

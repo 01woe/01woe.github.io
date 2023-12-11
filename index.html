@@ -2,21 +2,29 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-witdh initial-scale=1.0" />
-    <title>Alex</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matei</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header>
-      <h1>Cuibus Alex.</h1>
-      <img width="80" src="images/unnamed.jpg" alt="selfie" />
-      <p id="job-title">tamplar@Woodera</p>
+      <div style="display: flex">
+        <div>
+          <img height="100" src="images/unnamed.jpg" alt="selfie" />
+        </div>
+        <div>
+          <h1>Cuibus Alexandru</h1>
+          <p id="job-title">antreprenor @ Woodera</p>
+        </div>
+      </div>
 
       <ul id="top-menu-bar">
-        <li><a href="#">HOME</a></li>
-        <li><a href="#" onclick="showSkills()">Skills</a></li>
-        <li><a href="#" class="active">Projects</a></li>
-        <li><a href="#" onclick="showLanguages()">Languages</a></li>
+        <li><a href="#" onclick="showPage('home')">HOME</a></li>
+        <li><a href="#" onclick="showPage('skills')">Skills</a></li>
+        <li>
+          <a href="#" onclick="showPage('projects')" class="active">Projects</a>
+        </li>
+        <li><a href="#" onclick="showPage('languages')">Languages</a></li>
       </ul>
     </header>
 
@@ -32,6 +40,7 @@
                 name="email"
                 id="userEmail"
                 placeholder="your@email.com"
+                required
               />
             </div>
 
@@ -41,7 +50,7 @@
                 type="text"
                 name="name"
                 id="userName"
-                placeholder="your@email.com"
+                placeholder="Enter your name"
                 required
               />
             </div>
@@ -49,21 +58,20 @@
             <button type="submit">Send</button>
           </form>
         </section>
-
         <section>
           <p>
-            notes> start server: CTRL + Shift + P -> Browser Sync mode in
-            Browser -> Enter -> /
+            start server: CTRL + Shift + P -> Browser Sync mode in Browser ->
+            Enter -> / -> Enter
           </p>
         </section>
       </div>
       <div id="main">
-        <div style="display: none">
+        <div id="home" class="page" style="display: none">
           <h2>Home</h2>
           <p>Welcome...</p>
         </div>
 
-        <div id="Skills" style="display: none">
+        <div id="skills" class="page" style="display: none">
           <h2>Skills</h2>
           <ul>
             <li class="favorite">HTML</li>
@@ -72,12 +80,12 @@
           </ul>
         </div>
 
-        <div id="Projects">
+        <div id="projects" class="page">
           <h2>Projects</h2>
           <p>...</p>
         </div>
 
-        <div id="languages" style="display: none">
+        <div style="display: none" class="page" id="languages">
           <h2>Known Languages</h2>
           <table border="1">
             <tr>
@@ -85,7 +93,7 @@
               <th>Level</th>
             </tr>
             <tr>
-              <td>Romanian</td>
+              <td class="favorite">Romanian</td>
               <td>Native</td>
             </tr>
             <tr>
@@ -99,7 +107,10 @@
 
     <footer>
       Open my
-      <a href="https://www.linkedin.com/" target="_blank"> LinkedIn</a>
+      <a href="https://www.linkedin.com/in/nicolaematei/" target="_blank"
+        >LinkedIn</a
+      >
+      account
     </footer>
 
     <script src="index.js"></script>
