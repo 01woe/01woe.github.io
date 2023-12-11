@@ -1,5 +1,7 @@
-var activePage = "projects";
+//variabile publice
+var activePage = "home";
 
+//functii publice
 function hide(id) {
   console.info("hide", id);
   document.getElementById(id).style.display = "none";
@@ -18,3 +20,6 @@ function showPage(id) {
   show(id);
   activePage = id;
 }
+
+//executii
+//showPage(activePage);
